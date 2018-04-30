@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>Home</h2>
+<p>UserId:@Html.TextBox("UserId")</p>
+<p>Password:@Html.TextBox("Password")</p>
+<input type="submit" value="Login"   onclick="location.href='@Url.Action("Login", "UserData")'"   />
+<br />
+@Html.ActionLink("Registered here..", "Create")
+
+
